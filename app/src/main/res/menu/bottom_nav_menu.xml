@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/campusmapItem"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="Campusmap" />
+    <item
+        android:id="@+id/busItem"
+        android:icon="@android:drawable/ic_menu_camera"
+        android:title="Bus" />
+    <item
+        android:id="@+id/timetableItem"
+        android:icon="@android:drawable/ic_menu_call"
+        android:title="Timetable" />
+    <item
+        android:id="@+id/linkItem"
+        android:icon="@android:drawable/ic_menu_call"
+        android:title="Link" />
+
+</menu>
