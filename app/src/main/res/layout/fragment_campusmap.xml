@@ -3,12 +3,53 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CampusmapFragment">
+    tools:context=".campusmap.CampusmapFragment">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Campusmap"
-        android:textSize="50sp"/>
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/campusmap_imagebutton_microphone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/campusmap_microphone"
+                android:background="#ffffff"/>
+
+            <EditText
+                android:id="@+id/campusmap_edittext_destination"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:textSize="30sp" />
+
+            <ImageButton
+                android:id="@+id/campusmap_imagebutton_search"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/campusmap_search"
+                android:background="#ffffff"/>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/campusmap_framelayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10">
+        </FrameLayout>
+
+    </LinearLayout>
 
 </FrameLayout>

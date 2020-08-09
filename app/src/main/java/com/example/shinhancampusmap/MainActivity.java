@@ -8,6 +8,10 @@ import androidx.fragment.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.MenuItem;
 
+import com.example.shinhancampusmap.bus.BusFragment;
+import com.example.shinhancampusmap.campusmap.CampusmapFragment;
+import com.example.shinhancampusmap.link.LinkFragment;
+import com.example.shinhancampusmap.timetable.TimetableFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
@@ -38,7 +42,6 @@ public class MainActivity extends AppCompatActivity {
             {
                 case R.id.campusmapItem:
                     transaction.replace(R.id.frameLayout, fragmentCampusmap).commitAllowingStateLoss();
-
                     break;
                 case R.id.busItem:
                     transaction.replace(R.id.frameLayout, fragmentBus).commitAllowingStateLoss();
